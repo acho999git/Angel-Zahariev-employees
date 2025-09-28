@@ -26,7 +26,6 @@ public final class Constants {
             DateTimeFormatter.ofPattern("yyyy.dd.MM"),
             DateTimeFormatter.ofPattern("yyyy dd MM"),
 
-
             DateTimeFormatter.ofPattern("dd-MM-yyyy"),
             DateTimeFormatter.ofPattern("dd/MM/yyyy"),
             DateTimeFormatter.ofPattern("dd.MM.yyyy"),
@@ -35,23 +34,7 @@ public final class Constants {
             DateTimeFormatter.ofPattern("MM-dd-yyyy"),
             DateTimeFormatter.ofPattern("MM/dd/yyyy"),
             DateTimeFormatter.ofPattern("MM.dd.yyyy"),
-            DateTimeFormatter.ofPattern("MM dd yyyy"),
-
-            DateTimeFormatter.ofPattern("yyyy-MM-dd"),
-
-            DateTimeFormatter.ofPattern("dd-MM-yyyy"),
-            DateTimeFormatter.ofPattern("dd-MM-yyyy"),
-            DateTimeFormatter.ofPattern("dd/MM/yyyy"),
-            DateTimeFormatter.ofPattern("dd/MM/yyyy"),
-            DateTimeFormatter.ofPattern("dd.MM.yyyy"),
-            DateTimeFormatter.ofPattern("dd.MM.yyyy"),
-
-            DateTimeFormatter.ofPattern("MM-dd-yyyy"),
-            DateTimeFormatter.ofPattern("MM-dd-yyyy"),
-            DateTimeFormatter.ofPattern("MM/dd/yyyy"),
-            DateTimeFormatter.ofPattern("MM/dd/yyyy"),
-            DateTimeFormatter.ofPattern("MM.dd.yyyy"),
-            DateTimeFormatter.ofPattern("MM.dd.yyyy")
+            DateTimeFormatter.ofPattern("MM dd yyyy")
     );
 
 }
