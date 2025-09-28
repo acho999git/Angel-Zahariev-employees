@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: tesk-solution
+
+server:
+  error:
+    include-message: always

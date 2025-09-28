@@ -1,0 +1,11 @@
+package com.angel.tasksolution.service.api;
+
+import com.angel.tasksolution.dto.ResponseDto;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+
+
+public interface FileService {
+    ResponseDto processFile(final MultipartFile file) throws IOException;
+}
