@@ -28,8 +28,7 @@ import static com.angel.tasksolution.constant.Constants.SUPPORTED_FORMATS;
 public class DateProcessingServiceImpl implements DateProcessingService {
 
     @Override
-    public ResponseDto getMaxCrossedWorkingPeriod(final MultipartFile file) throws IOException {
-        final String[] rows = getFileRows(file);
+    public ResponseDto getMaxCrossedWorkingPeriod(final  String[] rows) throws IOException {
         final List<EmployeeInfoDto> employeesInfo = getEmployeesInfo(rows);
         final Map<String, List<EmployeeInfoDto>> employeesByProjectId = getEmployeesInfoByProjectId(employeesInfo);
 
@@ -138,12 +137,6 @@ public class DateProcessingServiceImpl implements DateProcessingService {
                     .endDate(getEndDate(columns[3]))
                     .build();
         }).toList();
-    }
-
-    private String[] getFileRows(final MultipartFile file) throws IOException {
-        final byte[] bytes = file.getBytes();
-        final String content = new String(bytes, StandardCharsets.UTF_8);
-        return content.split("\\n");
     }
 
     private LocalDate getEndDate(final String endDate) {

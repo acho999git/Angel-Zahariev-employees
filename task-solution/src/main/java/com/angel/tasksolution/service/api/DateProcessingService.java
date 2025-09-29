@@ -6,5 +6,5 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 public interface DateProcessingService {
-    ResponseDto getMaxCrossedWorkingPeriod(final MultipartFile file) throws IOException;
+    ResponseDto getMaxCrossedWorkingPeriod(final String[] rows) throws IOException;
 }
